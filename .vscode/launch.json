@@ -1,0 +1,65 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Run Python Syntax Simplicity",
+            "type": "node-terminal",
+            "request": "launch",
+            "command": "cd ${workspaceFolder}/syntax-simplicity && python3 syntax_simplicity.py"
+        },
+        {
+            "name": "Run JavaScript Syntax Simplicity",
+            "type": "node-terminal",
+            "request": "launch",
+            "command": "cd ${workspaceFolder}/syntax-simplicity && node syntaxSimplicity.js"
+        },
+        {
+            "name": "Run Java Syntax Simplicity",
+            "type": "node-terminal",
+            "request": "launch",
+            "command": "cd ${workspaceFolder}/syntax-simplicity && javac SyntaxSimplicity.java && java SyntaxSimplicity"
+        },
+        {
+            "name": "Run C# Syntax Simplicity",
+            "type": "node-terminal",
+            "request": "launch",
+            "command": "cd ${workspaceFolder}/syntax-simplicity && dotnet run --project SyntaxSimplicity.csproj"
+        },
+        {
+            "name": "Run C++ Syntax Simplicity",
+            "type": "node-terminal",
+            "request": "launch",
+            "command": "cd ${workspaceFolder}/syntax-simplicity && /usr/bin/g++ -std=c++17 -g SyntaxSimplicity.cpp -o SyntaxSimplicity && ./SyntaxSimplicity"
+        },
+        {
+            "name": "Run Active Python File",
+            "type": "node-terminal",
+            "request": "launch",
+            "command": "cd ${fileDirname} && python3 ${fileBasename}"
+        },
+        {
+            "name": "Run Active JavaScript File",
+            "type": "node-terminal",
+            "request": "launch",
+            "command": "cd ${fileDirname} && node ${fileBasename}"
+        },
+        {
+            "name": "Run Active Java File",
+            "type": "node-terminal",
+            "request": "launch",
+            "command": "cd ${fileDirname} && javac ${fileBasename} && java ${fileBasenameNoExtension}"
+        },
+        {
+            "name": "Run Active C# Project",
+            "type": "node-terminal",
+            "request": "launch",
+            "command": "cd ${fileDirname} && dotnet run --project ${fileBasenameNoExtension}.csproj"
+        },
+        {
+            "name": "Run Active C++ File",
+            "type": "node-terminal",
+            "request": "launch",
+            "command": "cd ${fileDirname} && /usr/bin/g++ -std=c++17 -g ${fileBasename} -o ${fileBasenameNoExtension} && ./${fileBasenameNoExtension}"
+        }
+    ]
+}
