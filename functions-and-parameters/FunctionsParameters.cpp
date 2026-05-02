@@ -28,7 +28,7 @@ int main() {
     std::cout << add(10) << "\n";
     std::cout << add(10, 5) << "\n";
 
-    // First-class function
+    // First-class function: a lambda can be stored in a variable and passed to another function.
     auto multiply = [](int x, int y) { return x * y; };
     std::cout << apply_operation(4, 3, multiply) << "\n";
 

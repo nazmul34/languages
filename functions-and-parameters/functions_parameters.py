@@ -21,7 +21,7 @@ def main() -> None:
     print(add(10))
     print(add(10, 5))
 
-    # First-class function
+    # First-class function: a function can be stored in a variable and passed to another function.
     multiply = lambda x, y: x * y
     print(apply_operation(4, 3, multiply))
 

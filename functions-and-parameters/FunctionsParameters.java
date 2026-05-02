@@ -32,7 +32,7 @@ public class FunctionsParameters {
         System.out.println(add(10));
         System.out.println(add(10, 5));
 
-        // First-class function via lambda
+        // First-class function: a lambda can be stored in a variable and passed to another function.
         BiFunction<Integer, Integer, Integer> multiply = (x, y) -> x * y;
         System.out.println(applyOperation(4, 3, multiply));
     }

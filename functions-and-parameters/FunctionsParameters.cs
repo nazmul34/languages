@@ -34,7 +34,7 @@ class FunctionsParameters
         Console.WriteLine(Add(10));
         Console.WriteLine(Add(10, 5));
 
-        // First-class function
+        // First-class function: a lambda can be stored in a variable and passed to another function.
         Func<int, int, int> multiply = (x, y) => x * y;
         Console.WriteLine(ApplyOperation(4, 3, multiply));
     }

@@ -24,7 +24,7 @@ function main() {
   console.log(add(10));
   console.log(add(10, 5));
 
-  // First-class function
+  // First-class function: a function can be stored in a variable and passed to another function.
   const multiply = (x, y) => x * y;
   console.log(applyOperation(4, 3, multiply));
 }
